@@ -1,0 +1,9 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - name: Upgrade AppInventor
+    command: sh ./upgrade-appinventor.sh
+  - name: Update deps
+    command: sh ./update-deps.sh
+    openMode: split-right
